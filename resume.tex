@@ -30,6 +30,9 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Compact lists for 1-page resume
+\setlist[itemize]{itemsep=0pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
@@ -50,13 +53,13 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{\textit{\small#3}} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -75,7 +78,7 @@
   \begin{itemize}[leftmargin=0.15in]
     \small{
       \item{
-        DevOps / Cloud Engineer with 5+ years of experience in infrastructure automation, Kubernetes-based deployments, and CI/CD delivery across Azure and AWS environments. Strong background in Terraform, Ansible, Azure DevOps, SonarQube, Linux, monitoring (Grafana/Prometheus/Kibana), and FinOps-focused cost optimization. Holds 5 cloud certifications (AZ-900, DP-900, AZ-104, AZ-400, AWS CCP).
+        \textbf{DevOps / Cloud Engineer} with \textbf{5+ years} of experience in infrastructure automation, Kubernetes-based deployments, and CI/CD delivery across \textbf{Azure} and \textbf{AWS}. Strong background in \textbf{Terraform}, \textbf{Ansible}, \textbf{Azure DevOps}, \textbf{SonarQube}, Linux, monitoring (\textbf{Grafana}/\textbf{Prometheus}/\textbf{Kibana}), and FinOps-focused cost optimization; holds \textbf{5 cloud certifications} (AZ-900, DP-900, AZ-104, AZ-400, AWS CCP).
       }
     }
   \end{itemize}
@@ -104,38 +107,39 @@
       {Standard Chartered Bank GBS}{Bangalore}
       {Senior Analyst, Cloud Engineering}{Jun 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Automated infrastructure provisioning and configuration using Ansible and Terraform to standardize deployments and reduce manual effort.}
-        \resumeItem{Configured CI/CD pipelines in Azure DevOps and integrated SonarQube quality gates for consistent build and release workflows.}
-        \resumeItem{Deployed and operated containerized applications on Kubernetes; applied Linux and networking troubleshooting to support reliable delivery.}
-        \resumeItem{Monitored services using Grafana, Prometheus, and Kibana to improve visibility into performance, reliability, and operational health.}
-        \resumeItem{Mentored interns as an onboarding buddy, helping support their transition to full-time roles.}
+        \resumeItem{Automated infrastructure provisioning using \textbf{Terraform + Ansible} to standardize deployments and reduce manual effort.}
+        \resumeItem{Built \textbf{CI/CD} pipelines in \textbf{Azure DevOps} and enforced code quality using \textbf{SonarQube} quality gates.}
+        \resumeItem{Deployed and supported containerized applications on \textbf{Kubernetes}; resolved Linux and networking issues to keep delivery on track.}
+        \resumeItem{Improved operational visibility using \textbf{3 monitoring tools} (\textbf{Grafana}, \textbf{Prometheus}, \textbf{Kibana}) for performance and reliability insights.}
+        \resumeItem{Mentored interns as an onboarding buddy, supporting their transition to full-time roles.}
       \resumeItemListEnd
 
     \resumeSubheading
       {IQVIA RDS Private Limited}{Bangalore}
       {Associate Software Developer}{Oct 2021 -- Jun 2022}
       \resumeItemListStart
-        \resumeItem{Deployed applications on Kubernetes to enable scalable and reliable runtime environments.}
-        \resumeItem{Developed solutions aligned to business requirements in coordination with development and system teams.}
-        \resumeItem{Created Ansible-based pipeline scripts to automate CI/CD processes across multiple repositories.}
-        \resumeItem{Planned and coordinated peer reviews of code, designs, and test plans to improve quality and delivery readiness.}
+        \resumeItem{Deployed applications on \textbf{Kubernetes} to support scalable and reliable runtime environments.}
+        \resumeItem{Delivered solutions based on business requirements in collaboration with development and system teams.}
+        \resumeItem{Automated \textbf{CI/CD} across \textbf{multiple repositories} using \textbf{Ansible}-based pipeline scripts to reduce manual release steps.}
+        \resumeItem{Coordinated peer reviews of code, designs, and test plans to improve quality and delivery readiness.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Accenture Solution Private Limited}{Bangalore}
       {Cloud Support Associate}{Jan 2021 -- Oct 2021}
       \resumeItemListStart
-        \resumeItem{Recommended cloud cost optimizations for AWS and Azure clients by analyzing billing data and usage metrics; supported FinOps transparency initiatives.}
+        \resumeItem{Recommended cloud cost optimizations for \textbf{2 clouds} (\textbf{AWS} and \textbf{Azure}) by analyzing billing data and usage metrics; supported FinOps transparency initiatives.}
         \resumeItem{Managed and organized billing data for large user bases to improve reporting and cost visibility.}
-        \resumeItem{Built delivery pipelines, containerized applications, and deployed to Kubernetes within defined timelines.}
-        \resumeItem{Created AWS Lambda functions to track key metrics and performed health checks for new client environments.}
+        \resumeItem{Built delivery pipelines, containerized applications, and deployed to \textbf{Kubernetes} within defined timelines.}
+        \resumeItem{Created \textbf{AWS Lambda} functions to track key metrics and performed health checks for new client environments.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
-  \begin{itemize}[leftmargin=0.15in]
+  \vspace{-2pt}
+  \begin{itemize}[leftmargin=0.15in, topsep=0pt, itemsep=0pt]
     \small{
       \item{Microsoft Azure Fundamentals (AZ-900)}
       \item{Microsoft Azure Data Fundamentals (DP-900)}
