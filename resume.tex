@@ -32,8 +32,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -54,10 +54,10 @@
     \end{tabular*}\vspace{-2pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=6pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=3pt, parsep=0pt, partopsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label=\textbullet, topsep=2pt, itemsep=1pt, parsep=0pt, partopsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -101,10 +101,11 @@
       {Standard Chartered Bank GBS}{Bangalore}
       {Senior Analyst, Cloud Engineering}{Jun 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Standardized infrastructure provisioning with \textbf{Terraform + Ansible}, cutting environment setup time from \textbf{2--3 hours to \textbf{45--60 minutes}}.}
-        \resumeItem{Implemented \textbf{Azure DevOps} \textbf{CI/CD} with \textbf{SonarQube} quality gates, reducing rework from failed checks by \textbf{~25\%}.}
-        \resumeItem{Deployed and supported applications on \textbf{Kubernetes}; improved incident resolution by reducing \textbf{MTTR} by \textbf{~20\%} through Linux and networking troubleshooting.}
-        \resumeItem{Improved observability using \textbf{3 monitoring tools} (\textbf{Grafana}, \textbf{Prometheus}, \textbf{Kibana}), cutting mean time to detect issues by \textbf{~30\%}.}
+        \resumeItem{Automated infrastructure provisioning with \textbf{Ansible} and \textbf{Terraform} to streamline deployments and standardize environments.}
+        \resumeItem{Configured \textbf{CI/CD} pipelines in \textbf{Azure DevOps} with \textbf{SonarQube} integration and quality gates.}
+        \resumeItem{Deployed containerized applications on \textbf{Kubernetes}; supported production issues using Linux and networking troubleshooting.}
+        \resumeItem{Monitored systems using \textbf{3 tools} (\textbf{Grafana}, \textbf{Prometheus}, \textbf{Kibana}) for performance and reliability insights.}
+        \resumeItem{Mentored interns as an onboarding buddy, supporting their transition to full-time roles.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -112,27 +113,35 @@
       {Associate Software Developer}{Oct 2021 -- Jun 2022}
       \resumeItemListStart
         \resumeItem{Deployed applications on \textbf{Kubernetes} to support scalable and reliable runtime environments.}
-        \resumeItem{Automated \textbf{CI/CD} across \textbf{6+ repositories} using \textbf{Ansible}-based pipeline scripts, cutting deployment time by \textbf{~30\%}.}
-        \resumeItem{Coordinated peer reviews for code/design/test plans, reducing post-release defects by \textbf{~15\%}.}
+        \resumeItem{Developed solutions based on business requirements in coordination with development and system teams.}
+        \resumeItem{Created \textbf{Ansible}-based pipeline scripts to automate \textbf{CI/CD} processes across multiple repositories.}
+        \resumeItem{Planned and coordinated peer reviews of code, designs, and test plans to improve quality deliverables.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Accenture Solution Private Limited}{Bangalore}
       {Cloud Support Associate}{Jan 2021 -- Oct 2021}
       \resumeItemListStart
-        \resumeItem{Recommended cost optimizations for \textbf{2 clouds} (\textbf{AWS} and \textbf{Azure}) by analyzing billing and usage metrics; identified savings opportunities of \textbf{~8--12\%} of monthly spend (right-sizing, scheduling, commitments).}
+        \resumeItem{Recommended cloud cost optimizations for \textbf{2 clouds} (\textbf{AWS} and \textbf{Azure}) by analyzing billing data and usage metrics; supported FinOps transparency initiatives.}
+        \resumeItem{Managed and organized billing data for large user bases to improve reporting and cost visibility.}
         \resumeItem{Built pipelines, containerized applications, and deployed to \textbf{Kubernetes} within defined timelines.}
-        \resumeItem{Developed \textbf{AWS Lambda} functions to track key metrics and automate health checks, saving \textbf{~4 hours/week} of manual validation.}
+        \resumeItem{Created \textbf{AWS Lambda} functions to track key metrics and performed health checks for new client environments.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
-  \vspace{-4pt}
-  {\small
-  \noindent \textbf{Azure:} AZ-900, DP-900, AZ-104, AZ-400 \quad \textbullet \quad \textbf{AWS:} Certified Cloud Practitioner (CCP)
-  }
+  \vspace{-2pt}
+  \begin{itemize}[leftmargin=0.15in, label=\textbullet, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]
+    \small{
+      \item{Microsoft Azure Fundamentals (AZ-900)}
+      \item{Microsoft Azure Data Fundamentals (DP-900)}
+      \item{Microsoft Azure Administrator Associate (AZ-104)}
+      \item{Microsoft Azure DevOps Engineer Expert (AZ-400)}
+      \item{AWS Certified Cloud Practitioner (CCP)}
+    }
+  \end{itemize}
 
 %-----------EDUCATION-----------
 \section{Education}
