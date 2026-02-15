@@ -1,0 +1,157 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sumit Saurabh} \\ \vspace{2pt}
+    \small +91 78291 56388 \ $|$ \ \href{mailto:sumitdsatm@gmail.com}{sumitdsatm@gmail.com}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in]
+    \small{
+      \item{
+        DevOps / Cloud Engineer with 5+ years of experience in infrastructure automation, Kubernetes-based deployments, and CI/CD delivery across Azure and AWS environments. Strong background in Terraform, Ansible, Azure DevOps, SonarQube, Linux, monitoring (Grafana/Prometheus/Kibana), and FinOps-focused cost optimization. Holds 5 cloud certifications (AZ-900, DP-900, AZ-104, AZ-400, AWS CCP).
+      }
+    }
+  \end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud}{: Azure, AWS} \\
+     \textbf{Infrastructure as Code}{: Terraform} \\
+     \textbf{Configuration Management}{: Ansible} \\
+     \textbf{Containers \& Orchestration}{: Docker, Kubernetes} \\
+     \textbf{CI/CD \& Quality}{: Azure DevOps, SonarQube} \\
+     \textbf{Monitoring}{: Grafana, Prometheus, Kibana} \\
+     \textbf{Operating Systems \& Networking}{: Linux, Networking} \\
+     \textbf{Tools}{: Git, JIRA, Visual Studio Code, Eclipse} \\
+     \textbf{Languages}{: SQL}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Standard Chartered Bank GBS}{Bangalore}
+      {Senior Analyst, Cloud Engineering}{Jun 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Automated infrastructure provisioning and configuration using Ansible and Terraform to standardize deployments and reduce manual effort.}
+        \resumeItem{Configured CI/CD pipelines in Azure DevOps and integrated SonarQube quality gates for consistent build and release workflows.}
+        \resumeItem{Deployed and operated containerized applications on Kubernetes; applied Linux and networking troubleshooting to support reliable delivery.}
+        \resumeItem{Monitored services using Grafana, Prometheus, and Kibana to improve visibility into performance, reliability, and operational health.}
+        \resumeItem{Mentored interns as an onboarding buddy, helping support their transition to full-time roles.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IQVIA RDS Private Limited}{Bangalore}
+      {Associate Software Developer}{Oct 2021 -- Jun 2022}
+      \resumeItemListStart
+        \resumeItem{Deployed applications on Kubernetes to enable scalable and reliable runtime environments.}
+        \resumeItem{Developed solutions aligned to business requirements in coordination with development and system teams.}
+        \resumeItem{Created Ansible-based pipeline scripts to automate CI/CD processes across multiple repositories.}
+        \resumeItem{Planned and coordinated peer reviews of code, designs, and test plans to improve quality and delivery readiness.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Accenture Solution Private Limited}{Bangalore}
+      {Cloud Support Associate}{Jan 2021 -- Oct 2021}
+      \resumeItemListStart
+        \resumeItem{Recommended cloud cost optimizations for AWS and Azure clients by analyzing billing data and usage metrics; supported FinOps transparency initiatives.}
+        \resumeItem{Managed and organized billing data for large user bases to improve reporting and cost visibility.}
+        \resumeItem{Built delivery pipelines, containerized applications, and deployed to Kubernetes within defined timelines.}
+        \resumeItem{Created AWS Lambda functions to track key metrics and performed health checks for new client environments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \begin{itemize}[leftmargin=0.15in]
+    \small{
+      \item{Microsoft Azure Fundamentals (AZ-900)}
+      \item{Microsoft Azure Data Fundamentals (DP-900)}
+      \item{Microsoft Azure Administrator Associate (AZ-104)}
+      \item{Microsoft Azure DevOps Engineer Expert (AZ-400)}
+      \item{AWS Certified Cloud Practitioner (CCP)}
+    }
+  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dayananda Sagar Academy of Technology \& Management}{Bangalore}
+      {Bachelor of Engineering}{2016 -- 2020}
+  \resumeSubHeadingListEnd
+
+\end{document}
+
